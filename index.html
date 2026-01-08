@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Marco San Juan</title>
 </head>
-<body>
-    <h1>Marco San Juan</h1>
-    <h2>Full Stack Engineer</h2>
-    <hr>
-    <p>Software Engineer with hands-on experience in developing and maintaining enterprise-level cargo applications. Proficient in Java,
-Spring Boot, and Angular, with a solid foundation in both backend and frontend development. Strong understanding of Object
-Oriented Design principles and design patterns. </p>
-    <h3>Projects</h3>
-    <ul>
-        <li><strong>Cargo Management System:</strong> Developed a comprehensive cargo management system using Java and Spring Boot for the backend and Angular for the frontend. Implemented features such as shipment tracking, inventory management, and reporting tools.</li>
-        <li><strong>Real-time Notification Service:</strong> Created a real-time notification service using WebSockets to provide instant updates on cargo status changes. This improved communication between stakeholders and enhanced user experience.</li>
-        <li><strong>Data Integration Platform:</strong> Built a data integration platform that consolidated data from various sources, enabling seamless data flow and improved decision-making processes.</li>
-
-
-
-
-    
+<body class="bg-gradient-to-br from-gray-100 to-blue-50 min-h-screen">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-gray-900 mb-2">Marco San Juan</h1>
+            <h2 class="text-2xl text-blue-600 font-medium">Full Stack Engineer</h2>
+            <hr class="mt-6 border-t-2 border-blue-300 w-24 mx-auto">
+        </header>
+        
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <p class="text-gray-700 leading-relaxed text-lg">
+                Software Engineer with hands-on experience in developing and maintaining enterprise-level cargo applications. Proficient in Java,
+                Spring Boot, and Angular, with a solid foundation in both backend and frontend development. Strong understanding of Object
+                Oriented Design principles and design patterns.
+            </p>
+        </section>
+        
+        <section>
+            <h3 class="text-3xl font-bold mt-8 mb-6 text-gray-800 border-l-4 border-blue-600 pl-4">Projects</h3>
+            <ul class="space-y-6 list-none ml-0 pl-0">
+                <li class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-blue-400 hover:border-blue-600">
+                    <strong class="font-bold text-xl text-blue-600 block mb-2">Cargo Management System</strong> 
+                    <span class="text-gray-700 leading-relaxed">Developed a comprehensive cargo management system using Java and Spring Boot for the backend and Angular for the frontend. Implemented features such as shipment tracking, inventory management, and reporting tools.</span>
+                </li>
+                <li class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-green-400 hover:border-green-600">
+                    <strong class="font-bold text-xl text-green-600 block mb-2">Real-time Notification Service</strong> 
+                    <span class="text-gray-700 leading-relaxed">Created a real-time notification service using WebSockets to provide instant updates on cargo status changes. This improved communication between stakeholders and enhanced user experience.</span>
+                </li>
+                <li class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-purple-400 hover:border-purple-600">
+                    <strong class="font-bold text-xl text-purple-600 block mb-2">Data Integration Platform</strong> 
+                    <span class="text-gray-700 leading-relaxed">Built a data integration platform that consolidated data from various sources, enabling seamless data flow and improved decision-making processes.</span>
+                </li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
