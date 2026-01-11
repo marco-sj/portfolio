@@ -280,6 +280,37 @@ nav {
   box-shadow: var(--shadow-color);
 }
 
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 100;
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: var(--primary-blue);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
 .nav-links {
   display: flex;
   gap: 3rem;
@@ -525,8 +556,16 @@ nav a.active::after {
   max-width: 1200px;
   margin: 3rem auto 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
 }
 
 .project-card {
@@ -622,10 +661,11 @@ nav a.active::after {
     width: 100%;
     height: auto;
     position: relative;
-    padding-top: 2rem;
+    padding: 2rem 1.5rem;
     border-right: none;
     border-bottom: 1px solid var(--border-light);
     top: 0;
+    border-radius: 0;
   }
   
   .main-content {
@@ -638,9 +678,39 @@ nav a.active::after {
   
   nav {
     margin-left: 0;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 73px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 73px);
+    background: white;
+    flex-direction: column;
+    padding: 2rem;
     gap: 1.5rem;
-    justify-content: center;
+    transition: left 0.3s ease;
+    box-shadow: var(--shadow-lg);
+    align-items: flex-start;
+  }
+  
+  .nav-links.active {
+    left: 0;
+  }
+  
+  nav a {
+    font-size: 1.25rem;
+    padding: 1rem 0;
+    width: 100%;
+    border-bottom: 1px solid var(--border-light);
   }
   
   .hero-content {
@@ -649,6 +719,17 @@ nav a.active::after {
   
   .hero-buttons {
     justify-content: center;
+  }
+  
+  .hero-section {
+    margin: 1rem;
+    padding: 3rem 2rem;
+  }
+  
+  .skills-section,
+  .projects-section,
+  .about-section {
+    margin: 1rem;
   }
   
   .skills-grid {
@@ -671,33 +752,104 @@ nav a.active::after {
   .about-content {
     grid-template-columns: 1fr;
   }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 @media (max-width: 640px) {
   .hero-name {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.1;
   }
   
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   
-  .hero-section,
+  .hero-greeting {
+    font-size: 1rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .hero-section {
+    padding: 2rem 1rem;
+    margin: 0.5rem;
+    min-height: auto;
+  }
+  
   .skills-section,
   .projects-section,
   .about-section {
-    padding: 3rem 1.5rem;
+    padding: 2rem 1rem;
+    margin: 0.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
   }
   
   nav {
-    flex-wrap: wrap;
-    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .logo-text {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
   
   .btn-primary,
   .btn-secondary {
-    padding: 0.875rem 2rem;
+    padding: 0.875rem 1.5rem;
     font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .hero-buttons {
+    width: 100%;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+  }
+  
+  .skill-item {
+    padding: 0.75rem 1rem;
+  }
+  
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .footer-links {
+    gap: 1rem;
+    flex-direction: column;
   }
 }
 
