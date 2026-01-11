@@ -730,6 +730,7 @@ nav a.active::after {
   .projects-section,
   .about-section {
     margin: 1rem;
+    padding: 5rem 3rem;
   }
   
   .skills-grid {
@@ -750,7 +751,20 @@ nav a.active::after {
   }
   
   .about-content {
-    grid-template-columns: 1fr;
+    display: block;
+    gap: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .about-text,
+  .about-highlights {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .about-text {
+    margin-bottom: 2rem;
   }
   
   .profile-image {
@@ -788,6 +802,14 @@ nav a.active::after {
   .about-section {
     padding: 2rem 1rem;
     margin: 0.5rem;
+  }
+  
+  .about-content {
+    display: block;
+  }
+  
+  .about-text {
+    text-align: left;
   }
   
   .section-title {
@@ -886,8 +908,8 @@ nav a.active::after {
 /* ==================== ABOUT SECTION ==================== */
 
 .about-section {
-  padding: 4rem 3rem;
-  background: white;
+  padding: 5rem 3rem;
+  background-color: white;
   margin: 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-lg);
@@ -902,6 +924,10 @@ nav a.active::after {
   align-items: start;
 }
 
+.about-text {
+  width: 100%;
+}
+
 .about-text p {
   margin-bottom: 1.5rem;
   line-height: 1.8;
@@ -912,6 +938,7 @@ nav a.active::after {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
 }
 
 .highlight-item {
