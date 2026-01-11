@@ -1,44 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Marco San Juan</title>
+    <title>Marco San Juan - Full Stack Engineer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gradient-to-br from-gray-100 to-blue-50 min-h-screen">
-    <div class="max-w-4xl mx-auto px-6 py-12">
-        <header class="text-center mb-12">
-            <h1 class="text-5xl font-bold text-gray-900 mb-2">Marco San Juan</h1>
-            <h2 class="text-2xl text-blue-600 font-medium">Full Stack Engineer</h2>
-            <hr class="mt-6 border-t-2 border-blue-300 w-24 mx-auto">
-        </header>
-        
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
-            <p class="text-gray-700 leading-relaxed text-lg">
-                Software Engineer with hands-on experience in developing and maintaining enterprise-level cargo applications. Proficient in Java,
-                Spring Boot, and Angular, with a solid foundation in both backend and frontend development. Strong understanding of Object
-                Oriented Design principles and design patterns.
-            </p>
-        </section>
-        
-        <section>
-            <h3 class="text-3xl font-bold mt-8 mb-6 text-gray-800 border-l-4 border-blue-600 pl-4">Projects</h3>
-            <ul class="space-y-6 list-none ml-0 pl-0">
-                <li class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-blue-400 hover:border-blue-600">
-                    <strong class="font-bold text-xl text-blue-600 block mb-2">Cargo Management System</strong> 
-                    <span class="text-gray-700 leading-relaxed">Developed a comprehensive cargo management system using Java and Spring Boot for the backend and Angular for the frontend. Implemented features such as shipment tracking, inventory management, and reporting tools.</span>
-                </li>
-                <li class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-green-400 hover:border-green-600">
-                    <strong class="font-bold text-xl text-green-600 block mb-2">Real-time Notification Service</strong> 
-                    <span class="text-gray-700 leading-relaxed">Created a real-time notification service using WebSockets to provide instant updates on cargo status changes. This improved communication between stakeholders and enhanced user experience.</span>
-                </li>
-                <li class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-purple-400 hover:border-purple-600">
-                    <strong class="font-bold text-xl text-purple-600 block mb-2">Data Integration Platform</strong> 
-                    <span class="text-gray-700 leading-relaxed">Built a data integration platform that consolidated data from various sources, enabling seamless data flow and improved decision-making processes.</span>
-                </li>
-            </ul>
-        </section>
+
+<body>
+    <div class="portfolio-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <img src="/assets/profile.png" alt="Profile Picture" class="profile-image">
+                <h2 class="profile-name">Marco</h2>
+                <p class="profile-subtitle">San Juan</p>
+                <span class="profile-badge">Full Stack Developer</span>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3 class="contact-title">Contact Information</h3>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div class="contact-details">
+                        <p class="contact-label">Email</p>
+                        <p class="contact-value">marco.e.sanjuan@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-calendar contact-icon"></i>
+                    <div class="contact-details">
+                        <p class="contact-label">Birthday</p>
+                        <p class="contact-value">July 7, 1999</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <div class="contact-details">
+                        <p class="contact-label">Location</p>
+                        <p class="contact-value">Taguig, Philippines</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social-media">
+                <h3 class="social-title">Social Media</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/marco-s-24804b217/" class="social-link" title="LinkedIn"
+                        target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/marco-sj" class="social-link" title="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Navigation -->
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="hero-section" id="home">
+                <div class="hero-content">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Marco San Juan</h1>
+                    <h2 class="hero-title">Full Stack Engineer</h2>
+                    <p class="hero-description">
+                        Passionate Full Stack Engineer specializing in building scalable enterprise applications with
+                        Java, Spring Boot, and Angular.
+                        With over 2 years of professional experience, I've contributed to mission-critical systems in
+                        banking and logistics industries,
+                        delivering high-quality solutions that drive business value.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="https://www.dropbox.com/scl/fi/qat5vf9s64cb302gpcig6/jan_resume.pdf?rlkey=rom21o64gyu6yjuj46b8ip0zr&st=6yd95x6u&dl=0"
+                            class="btn-secondary" target="_blank">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section" id="about">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">Technologies I work with</ph2>
+                    <p class="section-subtitle">Get to know me better</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a Full Stack Engineer with a strong foundation in both backend and frontend development,
+                            focused on building
+                            scalable, maintainable, and user-centric applications. I enjoy solving complex problems and
+                            translating
+                            requirements into clean, efficient software solutions.
+                        </p>
+                        <p>
+                            I specialize in developing backend services and APIs using Java and Spring Boot,
+                            complemented by modern frontend
+                            development with Angular. I also leverage modern DevOps practices and AI-assisted tools to
+                            improve development
+                            efficiency, code quality, and delivery workflows.
+                        </p>
+                        <p>
+                            Outside of hands-on development, I continuously explore emerging technologies, stay current
+                            with industry trends,
+                            and focus on refining my technical skills through ongoing learning and practical
+                            application.
+                        </p>
+
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <h4>Clean Code & Design Patterns</h4>
+                            <p>Apply clean code principles, object-oriented design, and GoF design patterns to build
+                                maintainable and extensible systems</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-layer-group"></i>
+                            <h4>Full Stack Development</h4>
+                            <p>Hands-on experience developing backend services with Java and Spring Boot and building
+                                frontend applications with Angular</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <h4>Agile & Best Practices</h4>
+                            <p>Experienced working in Agile/Scrum environments while following coding standards,
+                                reviews, and established development practices</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills-section" id="skills">
+                <div class="section-header">
+                    <h2 class="section-title">Skills</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Core Stack -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Core Stack</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-java skill-icon"></i>
+                                <span class="skill-name">Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-leaf skill-icon"></i>
+                                <span class="skill-name">Spring Boot</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-angular skill-icon"></i>
+                                <span class="skill-name">Angular</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code skill-icon"></i>
+                                <span class="skill-name">TypeScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-exchange-alt skill-icon"></i>
+                                <span class="skill-name">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Framework -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Framework</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fas fa-leaf skill-icon"></i>
+                                <span class="skill-name">Spring Boot</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-angular skill-icon"></i>
+                                <span class="skill-name">Angular</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react skill-icon"></i>
+                                <span class="skill-name">React</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Tools</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt skill-icon"></i>
+                                <span class="skill-name">Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-box skill-icon"></i>
+                                <span class="skill-name">Maven</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code-branch skill-icon"></i>
+                                <span class="skill-name">CI/CD</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-microsoft skill-icon"></i>
+                                <span class="skill-name">Azure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects-section" id="portfolio">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-subtitle">My professional journey as a Full Stack Engineer</p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="project-title">Full Stack Engineer</h3>
+                        <p class="project-subtitle">ING Hubs Philippines | Oct 2025 - Present</p>
+                        <p class="project-description">
+                            Developed a wholesale trade banking API using Java and Azure DevOps, leveraging generative
+                            AI tools to accelerate
+                            development, improve code quality, and streamline CI/CD workflows.
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">Jr. Software Engineer</h3>
+                        <p class="project-subtitle">CHAMP Cargosystems | Sep 2024 - Oct 2025</p>
+                        <p class="project-description">
+                            Developed core cargo applications using Java and Angular, integrating with microservices for
+                            scalability and
+                            external communication, while ensuring high performance and code quality. Maintained and
+                            enhanced Java-based
+                            microservices and Angular front-end components to support business and user needs.
+                            Collaborated closely with
+                            software engineers, QA teams, and product owners in an Agile/Scrum environment to deliver
+                            business solutions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Marco San Juan. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Experience</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
